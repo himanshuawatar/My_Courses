@@ -16,12 +16,16 @@ body{
     justify-content: center;
     align-items: center;
     gap: 100px;
-    color: darkblue;
+    
     box-shadow: 0px 0px 10px white;
     height: 40px;
     width: auto;
 }
-.navitems:hover{
+a:link{
+    color: darkblue;
+    text-decoration: none;
+}
+a:hover{
     color: white;
     text-shadow: 0px 0px 10px;
     
@@ -47,16 +51,6 @@ body{
 
 .para{
     text-align: center;
-}
-
-.footer-1{
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(66, 66, 66);
-    color: azure;
-
 }
 
 .footer{
