@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+           background-image: linear-gradient(to left,#9bafd9,#103783 );
+        }
+
+        .fa-envelope, .fa-key{
+            color: darkgray;
+            position: relative;
+            
+        }
+
+        .container{
+            background-color: lightgrey;
+            text-align: center;
+            /* border: 1px solid grey; */
+            border-radius: 20px;
+            max-width: 400px;
+            height: auto;
+            margin: auto;
+            margin-top: 150px;
+            box-shadow: 0px 0px 10px white;
+        }
+        input{
+            text-decoration: none;
+            border: none;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        #heading{
+            padding-top: 40px;
+            color: grey;
+        }
+
+        .email, .password{
+            margin-left: 50px;
+            padding: 10px;
+        }
+
+        .check{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-left: 50px;
+            
+        }
+
+        button{
+            border: 1px solid grey;
+            width: 200px;
+            height: 40px;
+            margin-top: 20px;
+            color: grey;
+        }
+
+        .social{
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <h2 id="heading">Login</h2>
+            <hr style="border-color: lightgrey; width: 90%;">
+            <div class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="password">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="**********">
+            </div>
+
+            <div class="check">
+            <input type="checkbox">
+            <label for="checkbox" style="color: grey;">Remember Me</label>
+            </div>
+
+            <div class="button">
+                <button type="button" onclick="alert('Login Successfully')" >LOGIN</button>
+            </div>
+
+            <p style="font-size: small; color: grey;">Or login with</p>
+
+            <div class="social">
+                <div class="facebook">
+                    
+                    <a href="https://www.facebook.com/" target="_blank" style="text-decoration: none; color: grey;"><h5>Facebook</h5></a>
+
+                </div>
+
+                <div class="google">
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AdBytiNr0x1N8-qLe_DVNsBBWNDWhRuS34aGJjTRl6dqVj_R6tMZ0doFnhoO8awml68okdxkSdjecg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-703870386%3A1750518207312143" style="text-decoration: none; color: grey;"><h5>Google</h5></a>
+
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    
+</body>
+</html>
