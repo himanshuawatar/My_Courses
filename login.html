@@ -22,7 +22,7 @@
             max-width: 400px;
             height: auto;
             margin: auto;
-            margin-top: 150px;
+            margin-top: 50px;
             box-shadow: 0px 0px 10px white;
         }
         input{
@@ -42,12 +42,11 @@
             padding: 10px;
         }
 
-        .check{
+
+        .checkbox{
             display: flex;
-            justify-content: left;
+            justify-content: space-evenly;
             align-items: center;
-            margin-left: 50px;
-            
         }
 
         button{
@@ -58,10 +57,23 @@
             color: grey;
         }
 
+        #btn:hover{
+            background-color: darkgrey;
+            color: white;
+        }
+
         .social{
             display: flex;
-            justify-content: space-evenly;
-            padding-top: 0px;
+            justify-content:space-evenly;
+            align-items: center;
+            
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
         }
 
     </style>
@@ -81,27 +93,47 @@
                 <input type="password" placeholder="**********">
             </div>
 
+            <div class="checkbox">
+
             <div class="check">
             <input type="checkbox">
             <label for="checkbox" style="color: grey;">Remember Me</label>
             </div>
+            <div class="forget">
+                <a href="#" style="color: grey;">Forget Password</a>
+            </div>
+
+            </div>
+
+            
 
             <div class="button">
-                <button type="button" onclick="alert('Login Successfully')" >LOGIN</button>
+                <button type="button" onclick="alert('Login Successfully')" id="btn" >LOGIN</button>
             </div>
 
             <p style="font-size: small; color: grey;">Or login with</p>
 
             <div class="social">
+                <div class="icon-1"><img src="./Assests/facebook.svg" height="30px" width="30px" ></div>
                 <div class="facebook">
-                    
                     <a href="https://www.facebook.com/" target="_blank" style="text-decoration: none; color: grey;"><h5>Facebook</h5></a>
 
                 </div>
+                <div class="icon-2"><img src="./Assests/google.svg" height="30px" width="30px"></div>
 
                 <div class="google">
-                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AdBytiNr0x1N8-qLe_DVNsBBWNDWhRuS34aGJjTRl6dqVj_R6tMZ0doFnhoO8awml68okdxkSdjecg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-703870386%3A1750518207312143" style="text-decoration: none; color: grey;"><h5>Google</h5></a>
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AdBytiNr0x1N8-qLe_DVNsBBWNDWhRuS34aGJjTRl6dqVj_R6tMZ0doFnhoO8awml68okdxkSdjecg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-703870386%3A1750518207312143" target="_blank" style="text-decoration: none; color: grey;"><h5>Google</h5></a>
 
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="text-1">
+                    <p style="color: grey;">Don't have an account?</p>
+                </div>
+
+                <div class="text-2">
+                    <a href="./signup.html" target="_blank"><h4 style="color: grey;">Sign up</h4></a>
                 </div>
             </div>
 

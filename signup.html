@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign up Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    body{
+        background-image: linear-gradient(to left,#9bafd9,#103783 );
+    }
+    .container{
+            background-color: lightgrey;
+            text-align: center;
+            border-radius: 20px;
+            max-width: 400px;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0px 0px 10px white;
+        }
+        
+        .head{
+            padding-top: 10px;
+            color: grey;
+        }
+
+        input{
+            text-decoration: none;
+            border: none;
+            background-color: lightgrey;
+            padding: 5px;
+            font-size: small;
+            margin: 8px;
+           
+        }
+
+        .name{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 40px;
+            margin-left: 50px;
+        }
+
+        .check{
+            text-align: start;
+            margin-left: 40px;
+        }
+        
+         button{
+            border: 1px solid grey;
+            width: 200px;
+            height: 40px;
+            margin-top: 20px;
+            color: grey;
+            font-size: medium;
+        }
+
+        #btn:hover{
+            background-color: darkgrey;
+            color: white;
+        }
+
+        .link{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+</style>
+<body>
+    <div class="wrapper">
+
+    <div class="container">
+
+        <div class="head">
+            <h2>Sign up</h2>
+            <hr width="90%" style="border-color:lightgrey;">
+        </div>
+        <div class="info">
+            <div class="name">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="**********">
+            </div>
+
+        </div>
+
+        <div class="check">
+            <input type="checkbox">
+            <label for="checkbox" style="color: grey;">Remember me</label>
+        </div>
+
+        <div class="button">
+            <button id="btn" type="button" onclick="alert('Sign up Successfully')">Sign up</button>
+
+        </div>
+        <div class="text">
+            <p style="color:grey;">or</p>
+            <p style="color:grey;">Sign up with</p>
+        </div>
+
+        <div class="link">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./Assests/facebook.svg" width="30px"></a>
+            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AdBytiNr0x1N8-qLe_DVNsBBWNDWhRuS34aGJjTRl6dqVj_R6tMZ0doFnhoO8awml68okdxkSdjecg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-703870386%3A1750518207312143" target="_blank"><img src="./Assests/google.svg" width="30px"></a>
+        </div>
+
+        <br>
+
+        <hr width="90%" style="border-color: lightgrey;">
+
+        <div class="footer">
+                <div class="text-1">
+                    <p style="color: grey;">Don't have an account?</p>
+                </div>
+
+                <div class="text-2">
+                    <a href="./login.html" target="_blank"><h4 style="color: grey;">Log in</h4></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+</body>
+</html>
