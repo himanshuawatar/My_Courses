@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+</head>
+
+<style>
+    body{
+        background-image:linear-gradient(to left,#9bafd9,#103783 );;
+    }
+
+    .container{
+        background-color: lightgray;
+        border-radius: 20px;
+        margin: auto;
+        width: 600px;
+        height:auto;
+    }
+
+    .tabel,tr,td{
+        color: gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    input{
+        background-color: lightgrey;
+        border: hidden;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+    }
+
+    button{
+            margin-left: 200px;
+            border: 1px solid grey;
+            width: 200px;
+            height: 40px;
+            margin-top: 20px;
+            color: grey;
+            font-size: medium;
+        }
+
+    #btn:hover{
+            background-color: darkgrey;
+            color: white;
+        }    
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <h2 style="text-align: center; color: grey; padding-top: 10px;">Registration for Course</h2>
+            <hr width="90%">
+
+            <div class="form">
+
+                <table>
+                    <tr>
+                        <td><label for="sname">Name</label></td>
+                        <td><input type="text" id="sname" name="sname"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="fname">Father's Name</label></td>
+                        <td><input type="text" id="fname" name="fname"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mname">Mother's Name</label></td>
+                        <td><input type="text" id="mname" name="mname"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="tel">Mobile No.</label></td>
+                        <td><input type="tel" id="tel" name="tel"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td><input type="date" id="dob" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label></td>
+
+                        <td><input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label></td>
+
+                        <td><input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label></td>
+                        
+                    </tr>
+
+                </table>
+
+                <div class="button">
+                        <button id="btn" type="button" onclick="alert('Registration Successfully')">Register</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
